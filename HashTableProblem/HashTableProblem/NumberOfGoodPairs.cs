@@ -9,7 +9,7 @@ namespace HashTableProblem
     internal class NumberOfGoodPairs
     {
         //if the array contains nums[i], then it increases mas[nums[i]] by one and increases res 
-
+        int[] mas1 = new int[] { 1, 2, 3, 1, 1, 3 };
         public int NumIdenticalPairs(int[] nums)
         {
             int[] mas = new int[101];

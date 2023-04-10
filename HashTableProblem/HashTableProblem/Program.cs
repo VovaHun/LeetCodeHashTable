@@ -5,13 +5,13 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        NumberOfGoodPairs numberOf = new NumberOfGoodPairs();
+        HowManyNumbersAreSmaller func = new HowManyNumbersAreSmaller();
 
-        int[] mas1 = new int[] { 1, 2, 3, 1, 1, 3 };
+        int[] mas1 = new int[] { 6, 5, 4, 8 };
 
 
 
-        int res1 =  numberOf.NumIdenticalPairs(mas1);
+        int[] res1 = func.SmallerNumbersThanCurrent(mas1);
 
         Console.WriteLine(res1);
 
