@@ -5,15 +5,19 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        HowManyNumbersAreSmaller func = new HowManyNumbersAreSmaller();
 
-        int[] mas1 = new int[] { 6, 5, 4, 8 };
+        SortThePeople sortThePeople = new SortThePeople();
+
+        string[] names = new string[] { "Mary", "John", "Emma" };
+        int[] heights = new int[] { 180, 165, 170 };
+        
+        
+        sortThePeople.SortPeople(names,heights);
 
 
 
-        int[] res1 = func.SmallerNumbersThanCurrent(mas1);
 
-        Console.WriteLine(res1);
+        Console.WriteLine();
 
         Console.ReadKey();
     }
